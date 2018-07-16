@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+/*Header*/
+
+body {
+    padding: 0 2rem;
+    max-width: 100rem;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    width: fit-content;
+
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Merienda', cursive;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-family: 'Merienda', cursive;
+}
+
+header h1 a {
+    color: forestgreen;
+    font-family: 'Merienda', cursive;
+
+
+}
+
+header .background {
+    height: 300px;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    font-size: 15px;
+    color: darkgreen;
+}
+
+header .background .Renewable {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header ul {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+header ul li {
+    padding: 15px 0;
+    border-bottom: 3px solid black;
+}
+
+header ul li:hover {
+    border: 1px solid black;
+    border-top: none;
+}
+
+header ul li a {
+    color: black;
+}
+
+@media only screen and (min-width: 30rem) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    header ul {
+        display: block;
+        list-style: none;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+    header ul li {
+        display: inline-block;
+        font-family: 'Alegreya Sans', sans-serif;
+        margin: 0 1rem 0 0;
+        padding: 5px 15px;
+        border: 3px solid black;
+        transition: all 350ms ease-out;
+    }
+
+    header ul li:hover {
+        border: 5px solid black;
+    }
+
+}
+
+/*main*/
+
+.container section {
+    text-align: justify;
+    color: #45407A;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.container .btn {
+    display: table;
+    margin: .5rem auto;
+}
+
+.container .btn button {
+    display: table-row;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 .7rem .7rem 0;
+    padding: .5rem 7.5rem;
+    color: black;
+    background: orange;
+    border: 3px solid #B388EB;
+    outline: none;
+    cursor: pointer;
+    transition: all 250ms ease-out;
+}
+
+.container .btn button:hover {
+    border: 3px solid #B388EB;
+    background-color: #F25757;
+    color: black;
+}
+
+main .content {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 40rem) {
+
+    .container .btn {
+        display: block;
+        margin: 1rem auto;
+        width: fit-content;
+    }
+
+    .container .btn button {
+        display: inline-block;
+        margin: 0 1rem 1rem 0;
+        padding: 1rem 2.5rem;
+        font-size: 1rem;
+        width: fit-content;
+    }
+
+
+    /* Content */
+    .content h1 {
+        font-family: 'Alegreya', serif;
+        text-align: left;
+    }
+
+    .content {
+        margin: 1rem auto;
+        width: fit-content;
+    }
+
+    .content img {
+        width: 350px;
+        height: 350px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content p {
+        margin-top: .85rem;
+        text-align: justify;
+        color: black;
+    }
+
+    @media only screen and (min-width: 30rem) {
+
+        body {
+            font-size: 1rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-rows: 1fr auto;
+            grid-column-gap: 2rem;
+            grid-template-columns: 1fr 3fr;
+            grid-row-gap: 1rem;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .content img {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            justify-self: start;
+            left: 0;
+            transform: translateX(0%);
+            box-shadow: 5px 5px 20px 2.5px #0000008a;
+        }
+        .content h1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            justify-content: start;
+        }
+
+        .content p {
+            justify-self: center;
+        }
+
+
+    /*footer*/
+    footer {
+        text-align: center;
+        color: black;
+    }
+    .socials p {
+        text-align: center;
+    }
+
+
+    #active {
+        border: 3px solid #B388EB;
+        background-color: orange;
+        color: black;
+    }
