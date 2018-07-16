@@ -1,8 +1,0 @@
-header ul {
-    list-style: none;
-    text-transform: capitalize;
-}
-
-header ul li {
-    padding: 15px 0;
-    border-bottom: 3px solid black
