@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merienda');
+ @import url('https://fonts.googleapis.com/css?family=Merienda');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 
@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
     width: fit-content;
 
+}
+img{
+    width:300px;
+    height: 300px;
 }
 
 header {
@@ -79,7 +83,7 @@ header ul li a {
     color: black;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (max-width: 30rem) {
     body {
         font-size: 0.75rem;
     }
@@ -95,8 +99,9 @@ header ul li a {
         display: inline-block;
         font-family: 'Alegreya Sans', sans-serif;
         margin: 0 1rem 0 0;
-        padding: 5px 15px;
-        border: 3px solid black;
+        grid-column-gap: 2rem;
+        padding: 10px 8px;
+        border: 1px solid black;
         transition: all 350ms ease-out;
     }
 
@@ -128,7 +133,7 @@ header ul li a {
     padding: .5rem 7.5rem;
     color: black;
     background: orange;
-    border: 3px solid #B388EB;
+    border: 5px solid #B388EB;
     outline: none;
     cursor: pointer;
     transition: all 250ms ease-out;
@@ -141,8 +146,8 @@ header ul li a {
 }
 
 main .content {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 @media only screen and (min-width: 40rem) {
@@ -202,7 +207,7 @@ main .content {
             justify-items: center;
             align-items: center;
         }
-        
+
         .content img {
             grid-row: 2 / 3;
             grid-column: 1 / 2;
@@ -222,18 +227,18 @@ main .content {
         }
 
 
-    /*footer*/
-    footer {
-        text-align: center;
-        color: black;
-    }
-    .socials p {
-        text-align: center;
-    }
+        /*footer*/
+        footer {
+            text-align: center;
+            color: black;
+        }
+        .socials p {
+            text-align: center;
+        }
 
 
-    #active {
-        border: 3px solid #B388EB;
-        background-color: orange;
-        color: black;
-    }
+        #active {
+            border: 3px solid #B388EB;
+            background-color: orange;
+            color: black;
+        }
